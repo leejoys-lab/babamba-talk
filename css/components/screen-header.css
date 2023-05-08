@@ -1,0 +1,49 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--horizontal-space);
+  padding-top: 12%;
+  opacity: 0.9;
+}
+.screen-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.screen-header__icons {
+  display: flex;
+  align-items: center;
+}
+.screen-header__icons span {
+  margin-left: 12px;
+  cursor: pointer;
+  padding: 3px;
+}
+.xi-user-plus {
+  font-size: 26px;
+}
+
+@keyframes rotateZIcon {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotateYIcon {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.screen-header__icons i:not(.fa-gear):hover {
+  animation: rotateYIcon 0.8s linear;
+}
+.screen-header__icons .fa-gear:hover {
+  animation: rotateZIcon 1s linear infinite;
+}
