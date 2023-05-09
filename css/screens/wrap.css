@@ -1,23 +1,35 @@
 .wrap {
   width: 41.4vh;
-  height: 84%;
-  border-radius: 0 0 40px 40px;
+  height: 85%;
 
   border: 1px solid rgb(229, 229, 229);
   border-top: none;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
-  left: 0;
-  top: 2.8%;
-
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
   background: var(--white);
   font-family: "Dongle", sans-serif;
 }
-
+.friends-wrap {
+  overflow: hidden;
+}
 .login-wrap {
+  height: 85%;
   background-color: var(--yellow);
+  overflow: hidden;
 }
 
 .main-screen {
   margin: var(--horizontal-space);
+  margin-top: 25%;
+  border: 1px #000;
+}
+
+/* friends만 해당 */
+.contents {
+  height: 100%;
+  overflow: auto;
+  margin-top: 22%;
 }

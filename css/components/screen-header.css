@@ -2,9 +2,19 @@
   display: flex;
   justify-content: space-between;
   padding: var(--horizontal-space);
+  padding-bottom: 5px;
+
+  width: 41.4vh;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.screen-header:not(.friend-header) {
+  border-bottom: var(--main-border);
 }
 .screen-header__title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
 }
 .screen-header__icons {
@@ -19,6 +29,9 @@
 .screen-header__icons .xi-user-plus {
   font-size: 25px;
   transform: translate(-2px, -1px);
+}
+.screen-header__icons .xi-user-plus:hover {
+  opacity: 0.8;
 }
 
 @keyframes rotateZIcon {
@@ -39,7 +52,7 @@
   }
 }
 
-.screen-header__icons i:not(.fa-gear):hover {
+.screen-header__icons i:not(.xi-user-plus):hover {
   animation: rotateYIcon 0.8s linear;
 }
 .screen-header__icons .fa-gear:hover {

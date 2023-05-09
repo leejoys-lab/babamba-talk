@@ -36,24 +36,8 @@
     </div>
     <!-- wrap -->
     <div class="wrap friends-wrap">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <span>Connected</span>
-          <i class="fa-solid fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-          <span id="hours">18</span>
-          <span>:</span>
-          <span id="minutes">43</span>
-        </div>
-        <div class="status-bar__column">
-          <span>90%</span>
-          <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
-          <i class="fa-solid fa-bolt-lightning"></i>
-        </div>
-      </div>
       <!-- screen-header -->
-      <header class="screen-header">
+      <header class="screen-header friend-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
           <span>
@@ -70,56 +54,59 @@
           </span>
         </div>
       </header>
-      <!-- info -->
-      <div id="babambatalk-info">
-        <i class="fa-solid fa-circle-info"></i>
-        <span class="info-message">바밤바 톡은 계속 업데이트 중입니다!</span>
-      </div>
-      <!-- freinds-screen -->
-      <main class="friends-screen">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__avatar--xl"
-              src="./images/squirrel.png"
-              alt="프로필 이미지"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title">바밤</h4>
-              <h6 class="user-component__subtitle">
-                내가 제일 좋아하는 아이스크림은~
-              </h6>
-            </div>
-          </div>
-          <div class="user-component__column"></div>
-        </div>
 
-        <!-- channel -->
-        <div class="friends-screen__channel">
-          <div class="friends-screen__channel-header">
-            <span>Channel</span>
-            <i class="fa-solid fa-chevron-down fa-xs"></i>
-          </div>
+      <div class="contents">
+        <!-- info -->
+        <div id="babambatalk-info">
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="info-message">바밤바 톡은 계속 업데이트 중입니다!</span>
+        </div>
+        <!-- freinds-screen -->
+        <main class="friends-screen">
           <div class="user-component">
             <div class="user-component__column">
               <img
-                class="user-component__avatar--sm"
-                src="./images/bam.png"
+                class="user-component__avatar--xl"
+                src="./images/squirrel.png"
                 alt="프로필 이미지"
               />
               <div class="user-component__text">
-                <h4 class="user-component__title user-component__title--sm">
-                  Channel
-                </h4>
+                <h4 class="user-component__title">바밤</h4>
+                <h6 class="user-component__subtitle">
+                  내가 제일 좋아하는 아이스크림은~
+                </h6>
               </div>
             </div>
-            <div class="user-component__column">
-              <span>4</span>
-              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            <div class="user-component__column"></div>
+          </div>
+
+          <!-- channel -->
+          <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+              <span>Channel</span>
+              <i class="fa-solid fa-chevron-down fa-xs"></i>
+            </div>
+            <div class="user-component">
+              <div class="user-component__column">
+                <img
+                  class="user-component__avatar--sm"
+                  src="./images/bam.png"
+                  alt="프로필 이미지"
+                />
+                <div class="user-component__text">
+                  <h4 class="user-component__title user-component__title--sm">
+                    Channel
+                  </h4>
+                </div>
+              </div>
+              <div class="user-component__column">
+                <span>4</span>
+                <i class="fa-solid fa-chevron-right fa-xs"></i>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
 
       <!-- 화면 -->
       <div id="splash-screen"></div>

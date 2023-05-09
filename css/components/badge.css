@@ -14,6 +14,15 @@
   transform: translateY(-4px);
 }
 
+/* chat 알림 */
+.nav__notification {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  animation: notificationAnimation 4s ease-in-out infinite;
+}
+
+/* 더보기 알림 */
 .small-badge {
   position: absolute;
   width: 5px;
@@ -23,16 +32,17 @@
 
   position: absolute;
   left: 30px;
-  top: -10px;
+  top: 0px;
 }
 
-.icon-row__icon {
+/*  talk drive 아이콘 */
+.icon-row__icon .fa-hard-drive {
   position: relative;
 }
-.icon-row__icon .small-badge {
+.icon-row__icon .fa-hard-drive .small-badge {
   position: absolute;
-  left: 53px;
   top: -22px;
+  right: 0;
 }
 
 .setting {

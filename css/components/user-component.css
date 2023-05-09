@@ -7,12 +7,23 @@
   display: flex;
   align-items: center;
 }
+
 .user-component__avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 32%;
-  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 35%;
+  margin-right: 12px;
 }
+
+.chat-wrap .user-component:hover .user-component__column img {
+  padding: 9px;
+}
+
+.user-component__column.bam > img {
+  background: var(--dark-brown);
+  padding: 8px;
+}
+
 .user-component__avatar--xl {
   width: 70px;
   height: 70px;
@@ -21,8 +32,8 @@
   background: var(--avatar);
 }
 .user-component__avatar--sm {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 20px;
 }
 .user-component__title {
@@ -30,19 +41,14 @@
   font-weight: 600;
 }
 .user-component__title--sm {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 400;
 }
 .user-component__subtitle {
-  margin-top: 6px;
+  margin-top: 4px;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
-.user-component__column.bam > img {
-  background: var(--brown);
-  padding: 8px;
-}
-
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -51,7 +57,7 @@
 .user-component__column:last-child > span {
   display: block;
   font-size: 24px;
-  margin-right: 7px;
+  margin-right: 10px;
   margin-top: 4px;
 }
 

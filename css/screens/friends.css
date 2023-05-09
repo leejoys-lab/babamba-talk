@@ -27,11 +27,12 @@
     transform: translateY(-50%, 0%);
   }
   50% {
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -165%);
   }
   100% {
     transform: translateY(-50%, 180%);
     visibility: hidden;
+    display: none;
   }
 }
 
@@ -39,10 +40,10 @@
   width: 105%;
   position: absolute;
   left: 50.5%;
-  top: 180%;
+  top: 200%;
   transform: translate(-50%, -50%);
   animation: babambaScreen 1s ease-in-out;
-  z-index: 20;
+  z-index: 200;
 }
 
 #babambatalk-info {

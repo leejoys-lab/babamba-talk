@@ -1,14 +1,13 @@
 .nav {
   width: 41.4vh;
   position: fixed;
-  bottom: 5.15%;
-
-  border-radius: 0 0 40px 40px;
-  background-color: #f9f9fa;
-  padding: 20px 30px;
-  border: 1px solid rgba(121, 121, 121, 0.1);
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  padding: 16px 2.2%;
   box-sizing: border-box;
-  z-index: 10;
+  z-index: 30;
+  background-color: #f9f9fa;
 }
 .nav__list {
   display: flex;
@@ -28,13 +27,6 @@
   100% {
     transform: none;
   }
-}
-
-.nav__notification {
-  position: absolute;
-  left: 20px;
-  bottom: 15px;
-  animation: notificationAnimation 4s ease-in-out infinite;
 }
 
 @keyframes appearBtnAnimation {
@@ -66,25 +58,13 @@
   animation-delay: 0.4s;
 }
 
-/* friends만 delay 조절 */
-.firends-nav .nav__btn:nth-child(1) {
-  animation-delay: 0.5s;
-}
-.firends-nav .nav__btn:nth-child(2) {
-  animation-delay: 0.6s;
-}
-.firends-nav .nav__btn:nth-child(3) {
-  animation-delay: 0.7s;
-}
-.firends-nav .nav__btn:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.nav__btn:not(.on) a {
+.nav__btn a {
   width: 32px;
   height: 32px;
   display: block;
   border-radius: 50%;
+}
+.nav__btn:not(.on) a {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }

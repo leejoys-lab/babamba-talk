@@ -17,24 +17,25 @@
     />
   </head>
   <body>
-    <div class="wrap">
+    <body>
+      <!-- iphone -->
+      <div class="phone">
+        <img src="./images/phone.png" alt="iphone" />
+      </div>
+      <!-- status-bar -->
       <div class="status-bar">
+        <!-- clock -->
         <div class="status-bar__column">
-          <span>Connected</span>
-          <i class="fa-solid fa-wifi"></i>
+          <span id="clock">00:00</span>
         </div>
+        <!-- signal -->
         <div class="status-bar__column">
-          <span id="hours">18</span>
-          <span>:</span>
-          <span id="minutes">43</span>
-        </div>
-        <div class="status-bar__column">
-          <span>90%</span>
-          <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
-          <i class="fa-solid fa-bolt-lightning"></i>
+          <i class="xi-signal-4"></i>
+          <i class="xi-wifi"></i>
+          <i class="xi-battery-90"></i>
         </div>
       </div>
-
+    <div class="wrap">
       <header class="alt-header">
         <div class="alt-header__column">
           <a href="javascript:history.back();"
@@ -74,39 +75,40 @@
           </li>
         </ul>
       </main>
-
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__btn">
-            <a class="nav__link" href="friends.html"
-              ><i class="far fa-user fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="chats.html">
-              <span class="nav__notification badge">1</span>
-              <i class="far fa-comment fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="find.html">
-              <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="more.html">
-              <span class="small-badge"></span>
-              <i class="fa-solid fa-ellipsis fa-2x"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </div>
-
+    
+     <!-- nav -->
+     <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <img src="./images/bam_mini_off.png" alt="미니밤" />
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <img src="./images/bam_mini_off.png" alt="미니밤" />
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <img src="./images/bam_mini_off.png" alt="미니밤" />
+          </a>
+        </li>
+        <li class="nav__btn on">
+          <a class="nav__link" href="more.html">
+            <span class="small-badge"></span>
+            <img src="./images/bam_mini_on.png" alt="미니밤" />
+          </a>
+        </li>
+      </ul>
+    </nav>
     <!-- 스크립트 -->
     <script
       src="https://kit.fontawesome.com/2856f8e941.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .status-bar {
   width: 42vh;
   height: 6%;
-  background: var(--white);
+  background: #fbfbfb;
 
   display: flex;
   justify-content: space-between;
@@ -17,12 +17,12 @@
 .status-bar__column {
   width: 50%;
   color: var(--black);
-  padding: 24px;
+  padding: 16px;
   font-weight: 600;
 }
 
 .status-bar__column:first-child {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
 }
 .status-bar__column:last-child {
@@ -33,5 +33,5 @@
 }
 
 .status-bar__column:last-child > i {
-  margin-left: 6px;
+  margin-left: 4px;
 }
