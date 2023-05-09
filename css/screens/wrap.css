@@ -1,0 +1,16 @@
+.wrap {
+  width: 41.4vh;
+  height: 84%;
+  border-radius: 0 0 40px 40px;
+
+  border: 1px solid rgb(229, 229, 229);
+  border-top: none;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: 2.8%;
+}
+
+.main-screen {
+  margin: var(--horizontal-space);
+}

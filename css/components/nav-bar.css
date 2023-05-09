@@ -1,12 +1,14 @@
 .nav {
-  width: 358px;
+  width: 41.4vh;
   position: fixed;
-  bottom: 2px;
+  bottom: 5.2%;
 
+  border-radius: 0 0 40px 40px;
   background-color: #f9f9fa;
   padding: 20px 30px;
-  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  border: 1px solid rgba(121, 121, 121, 0.1);
   box-sizing: border-box;
+  z-index: 10;
 }
 .nav__list {
   display: flex;
@@ -51,14 +53,17 @@
   transform: translateY(50px);
 }
 
+.nav__btn:nth-child(1) {
+  animation-delay: 0.5s;
+}
 .nav__btn:nth-child(2) {
-  animation-delay: 0.1s;
+  animation-delay: 0.6s;
 }
 .nav__btn:nth-child(3) {
-  animation-delay: 0.2s;
+  animation-delay: 0.7s;
 }
 .nav__btn:nth-child(4) {
-  animation-delay: 0.3s;
+  animation-delay: 0.8s;
 }
 
 .find-icon {

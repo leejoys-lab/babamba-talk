@@ -1,0 +1,27 @@
+@media screen and (max-width: 500px) {
+  /* 아이폰 사라지기 */
+  .phone {
+    display: none;
+  }
+  /* 화면 wrqp  */
+  body .wrap {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+    top: 0;
+  }
+  .main-screen {
+    margin: var(--horizontal-space);
+  }
+
+  .status-bar {
+    display: none;
+  }
+
+  .nav {
+    width: 100%;
+    border-radius: 0;
+    bottom: 0;
+  }
+}

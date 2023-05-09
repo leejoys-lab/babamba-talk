@@ -1,60 +1,137 @@
-.welcome-header {
-  margin: 20% 0;
-  text-align: center;
+.login-wrap {
+  background-color: var(--yellow);
+}
 
+.welcome-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-top: 27%;
 }
 .welcome-header__title {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 5%;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Nerko One", cursive;
+}
+
+.welcome-header__avatar {
+  width: 190px;
+  height: 190px;
+  background-color: var(--avatar);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgb(37, 37, 37) 3px 3px 6px 0px inset,
+    rgba(128, 128, 128, 0.5) -3px -3px 6px 1px inset;
+  margin: 15% 0;
+}
+@keyframes scaleup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-wrap:hover .welcome-header__avatar img {
+  animation: scaleup 1s ease-in-out infinite;
+}
+.welcome-header__avatar img {
+  width: 60%;
+  height: 60%;
+  margin: auto;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .welcome-header__text {
-  width: 70%;
-  opacity: 0.6;
+  opacity: 0.8;
+  margin-bottom: 10%;
+  font-size: 18px;
+  animation: floating 1s ease-in-out infinite;
 }
 
 .login-form {
+  width: 100%;
+  padding: 0 12%;
   display: flex;
   flex-direction: column;
-  margin: 0 6%;
 }
 
 .login-form input {
+  background: transparent;
   border: none;
-  padding: 15px 2px;
+  padding: 15px 4px;
   font-size: 18px;
-  margin-bottom: 4%;
+  font-family: "Gamja Flower", cursive;
 }
+
 .login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
+  margin-bottom: 15px;
 }
 
 .login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
+  font-family: "Gamja Flower", cursive;
 }
 
 .login-form input:focus {
-  border-color: var(--yellow);
+  border-bottom-width: 2px;
+  font-weight: 600;
 }
 
 .login-form input[type="submit"] {
+  width: 100%;
+  height: 11%;
   cursor: pointer;
-  padding: 15px;
-  margin: 4% 0;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
+  border-radius: 68px 68px 0 0;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--yellow-white);
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  transition: background 0.2s ease-in-out;
+  background-color: var(--brown);
 }
 .login-form input[type="submit"]:hover {
-  background-color: var(--yellow);
+  background-color: var(--yellow-white);
+  color: var(--brown);
+  font-weight: 600;
 }
 .login-form a {
   text-align: center;
   font-size: 14px;
   color: #555;
+}
+#babamba {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 166vw;
+  transform: translateX(-50%);
 }

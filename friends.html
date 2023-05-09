@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>😀Joyful Talk</title>
+    <title>BaBamBa Talk</title>
 
     <meta property="og:title" content="Joyful Talk" />
     <meta property="og:description" content="Joyful Talk" />
@@ -17,7 +17,25 @@
     />
   </head>
   <body>
-    <div class="wrap">
+    <!-- iphone -->
+    <div class="phone">
+      <img src="./images/phone.png" alt="iphone" />
+    </div>
+    <!-- status-bar -->
+    <div class="status-bar">
+      <!-- clock -->
+      <div class="status-bar__column">
+        <span id="clock">00:00</span>
+      </div>
+      <!-- signal -->
+      <div class="status-bar__column">
+        <i class="xi-signal-4"></i>
+        <i class="xi-wifi"></i>
+        <i class="xi-battery-90"></i>
+      </div>
+    </div>
+    <!-- wrap -->
+    <div class="wrap friends-wrap">
       <div class="status-bar">
         <div class="status-bar__column">
           <span>Connected</span>
@@ -34,7 +52,7 @@
           <i class="fa-solid fa-bolt-lightning"></i>
         </div>
       </div>
-
+      <!-- screen-header -->
       <header class="screen-header">
         <h1 class="screen-header__title">Friends</h1>
         <div class="screen-header__icons">
@@ -48,38 +66,41 @@
           </span>
         </div>
       </header>
-
-      <a id="friends-display-link" href="#">
+      <!-- info -->
+      <div id="babambatalk-info">
         <i class="fa-solid fa-circle-info"></i>
-        <span>Friend's Names Display</span>
-        <i class="fa-solid fa-chevron-right fa-xs"></i>
-      </a>
-
+        <span class="info-message">바밤바 톡은 계속 업데이트 중입니다!</span>
+      </div>
+      <!-- freinds-screen -->
       <main class="friends-screen">
         <div class="user-component">
           <div class="user-component__column">
             <img
               class="user-component__avatar--xl"
-              src="https://cdn.pixabay.com/photo/2023/03/22/03/35/ai-generated-7868574__340.jpg"
+              src="./images/squirrel.png"
               alt="프로필 이미지"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title">Joy</h4>
-              <!-- <h6 class="user-component__subtitle">Don't worry Be happy</h6> -->
+              <h4 class="user-component__title">바밤</h4>
+              <h6 class="user-component__subtitle">
+                내가 제일 좋아하는 아이스크림은~
+              </h6>
             </div>
           </div>
           <div class="user-component__column"></div>
         </div>
+
+        <!-- channel -->
         <div class="friends-screen__channel">
           <div class="friends-screen__channel-header">
             <span>Channel</span>
-            <i class="fa-solid fa-chevron-up fa-xs"></i>
+            <i class="fa-solid fa-chevron-down fa-xs"></i>
           </div>
           <div class="user-component">
             <div class="user-component__column">
               <img
                 class="user-component__avatar--sm"
-                src="https://cdn.pixabay.com/photo/2023/03/22/03/35/ai-generated-7868574__340.jpg"
+                src="./images/bam.png"
                 alt="프로필 이미지"
               />
               <div class="user-component__text">
@@ -89,60 +110,51 @@
               </div>
             </div>
             <div class="user-component__column">
-              <div>
-                <span>2</span>
-                <i class="fa-solid fa-chevron-right fa-xs"></i>
-              </div>
+              <span>4</span>
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
             </div>
           </div>
         </div>
       </main>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__btn">
-            <a class="nav__link" href="friends.html"
-              ><i class="fa-solid fa-user fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="chats.html">
-              <span class="nav__notification badge">1</span>
-              <i class="fa-regular fa-comment fa-2x"></i>
-            </a>
-          </li>
-          <li class="nav__btn">
-            <a class="nav__link" href="find.html"
-              ><i class="fa-solid fa-magnifying-glass fa-2x"></i
-            ></a>
-          </li>
-          <li class="nav__btn">
-            <a
-              class="nav__link"
-              href="more.html
-            "
-            >
-              <span class="small-badge"></span>
-              <i class="fa-solid fa-ellipsis fa-2x"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
       <!-- 화면 -->
-      <div id="splash-screen">
-        <i class="fas fa-comment"></i>
-      </div>
-
-      <div id="screen-message">
-        <span>Screen message</span>
-      </div>
+      <div id="splash-screen"></div>
+      <img id="babamba" src="./images/babamba.png" alt="바밤바" />
     </div>
+
+    <!-- nav -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="small-badge"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- 스크립트 -->
     <script
       src="https://kit.fontawesome.com/2856f8e941.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>

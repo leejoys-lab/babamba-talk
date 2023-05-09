@@ -1,32 +1,37 @@
 .status-bar {
-  width: 360px;
-  position: fixed;
-  top: 0;
-  box-sizing: border-box;
+  width: 42vh;
+  height: 6%;
+  background: var(--white);
 
   display: flex;
-  justify-content: center;
-  padding: 5px 3px;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  top: 4.8%;
+  transform: translateX(-50%);
+  z-index: -10;
 }
+
 .status-bar__column {
-  width: 33%;
+  width: 50%;
+  color: var(--black);
+  padding: 24px;
+  font-weight: 600;
 }
 
-.status-bar__column:first-child span {
-  margin-right: 5px;
+.status-bar__column:first-child {
+  font-size: 18px;
+  letter-spacing: 2px;
 }
-
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 50%;
 }
 
-.status-bar__column .fa-battery-three-quarters {
-  margin: 0 4px;
+.status-bar__column:last-child > i {
+  margin-left: 6px;
 }

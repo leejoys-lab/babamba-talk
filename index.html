@@ -4,46 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>😀Joyful Talk</title>
+    <title>BaBamBa Talk</title>
 
     <meta property="og:title" content="Joyful Talk" />
     <meta property="og:description" content="Joyful Talk" />
     <meta property="og:image" href="" />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
   </head>
   <body>
-    <div class="wrap">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <span>Connected</span>
-          <i class="fa-solid fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-          <span id="hours">18</span>
-          <span>:</span>
-          <span id="minutes">43</span>
-        </div>
-        <div class="status-bar__column">
-          <span>90%</span>
-          <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
-          <i class="fa-solid fa-bolt-lightning"></i>
-        </div>
+    <!-- iphone -->
+    <div class="phone">
+      <img src="./images/phone.png" alt="iphone" />
+    </div>
+    <!-- status-bar -->
+    <div class="status-bar">
+      <!-- clock -->
+      <div class="status-bar__column">
+        <span id="clock">00:00</span>
       </div>
-
+      <!-- signal -->
+      <div class="status-bar__column">
+        <i class="xi-signal-4"></i>
+        <i class="xi-wifi"></i>
+        <i class="xi-battery-90"></i>
+      </div>
+    </div>
+    <!-- wrap -->
+    <div class="wrap login-wrap">
       <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Joyful Talk</h1>
-        <p class="welcome-header__text">
-          if you have a Account, log in with your Email or Phone number
-        </p>
+        <h1 class="welcome-header__title">BaBamBa Talk</h1>
+        <div class="welcome-header__avatar">
+          <img src="./images/squirrel.png" alt="다람이" />
+        </div>
+        <p class="welcome-header__text">안녕하세요. 만나서 반가워요!</p>
       </header>
 
       <form action="friends.html" method="get" class="login-form">
-        <input name="userId" type="text" placeholder="Email or phone number" />
-        <input name="password" type="Password" placeholder="Password" />
-        <input type="submit" value="Log In" />
-        <a href="#">Find Account of Password</a>
+        <input name="userId" type="text" placeholder="닉네임을 작성하세요." />
+        <input
+          name="password"
+          type="Password"
+          placeholder="비밀번호를 작성하세요."
+        />
+        <input type="submit" value="로그인 하기" />
       </form>
+
+      <!-- screen -->
+      <img id="babamba" src="./images/babamba.png" alt="바밤바" />
     </div>
 
     <!-- 스크립트 -->
@@ -51,5 +63,6 @@
       src="https://kit.fontawesome.com/2856f8e941.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>

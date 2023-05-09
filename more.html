@@ -17,25 +17,26 @@
     />
   </head>
   <body>
-    <div class="wrap">
+    <body>
+      <!-- iphone -->
+      <div class="phone">
+        <img src="./images/phone.png" alt="iphone" />
+      </div>
+      <!-- status-bar -->
       <div class="status-bar">
+        <!-- clock -->
         <div class="status-bar__column">
-          <span>Connected</span>
-          <i class="fa-solid fa-wifi"></i>
+          <span id="clock">00:00</span>
         </div>
+        <!-- signal -->
         <div class="status-bar__column">
-          <span id="hours">18</span>
-          <span>:</span>
-          <span id="minutes">43</span>
-        </div>
-        <div class="status-bar__column">
-          <span>90%</span>
-          <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
-          <i class="fa-solid fa-bolt-lightning"></i>
+          <i class="xi-signal-4"></i>
+          <i class="xi-wifi"></i>
+          <i class="xi-battery-90"></i>
         </div>
       </div>
-
-      <header class="screen-header">
+      <div class="wrap">
+        <header class="screen-header">
         <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
           <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>

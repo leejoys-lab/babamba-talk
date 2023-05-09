@@ -1,5 +1,5 @@
 .badge {
-  background-color: tomato;
+  background-color: var(--pink);
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -17,7 +17,7 @@
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: tomato;
+  background-color: var(--pink);
   border-radius: 50%;
 
   position: absolute;
