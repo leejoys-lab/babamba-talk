@@ -1,7 +1,7 @@
 .screen-header {
   display: flex;
   justify-content: space-between;
-  padding: 12px var(--horizontal-space);
+  padding: 20px var(--horizontal-space);
 }
 .screen-header__title {
   font-size: 36px;
