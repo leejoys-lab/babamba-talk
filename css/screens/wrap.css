@@ -9,6 +9,13 @@
   position: relative;
   left: 0;
   top: 2.8%;
+
+  background: var(--white);
+  font-family: "Dongle", sans-serif;
+}
+
+.login-wrap {
+  background-color: var(--yellow);
 }
 
 .main-screen {

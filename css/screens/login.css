@@ -1,7 +1,3 @@
-.login-wrap {
-  background-color: var(--yellow);
-}
-
 .welcome-header {
   display: flex;
   flex-direction: column;
@@ -64,8 +60,8 @@
 
 .welcome-header__text {
   opacity: 0.8;
-  margin-bottom: 10%;
-  font-size: 18px;
+  margin-bottom: 12%;
+  font-size: 22px;
   animation: floating 1s ease-in-out infinite;
 }
 
