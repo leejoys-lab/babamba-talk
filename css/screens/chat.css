@@ -1,20 +1,20 @@
 #chat-screen {
-  background: #abc1d1;
-  height: 150vh;
-  overflow: hidden;
+  background: hsl(47, 17%, 67%);
+  overflow: auto;
+}
+.main-chat {
+  overflow: auto;
 }
 #chat-screen .alt-header,
 #chat-screen .status-bar {
+  background: hsl(47, 17%, 67%);
   position: fixed;
-  width: 360px;
-  top: 0;
+  width: 42vh;
+  top: 70px;
   left: 50%;
   margin-top: 0;
   padding: 10px;
   transform: translateX(-50%);
-  background-color: #abc1d1;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
 }
 #chat-screen .status-bar {
   z-index: 10;
@@ -42,7 +42,7 @@
 
 .chat__timestamp {
   color: #fff;
-  background-color: #92a4b2;
+  background-color: #a85700;
   padding: 5px 20px;
   font-size: 14px;
   border-radius: 30px;
@@ -127,8 +127,8 @@
 
 .reply {
   position: fixed;
-  bottom: 0;
-  width: 360px;
+  bottom: 50px;
+  width: 42vh;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
@@ -198,5 +198,5 @@
   border: none;
 }
 .reply:focus-within {
-  background-color: #abc1d1;
+  background-color: #ffffff;
 }
