@@ -7,7 +7,7 @@
   width: 41.4vh;
   position: fixed;
   left: 50%;
-  top: 0;
+  top: 90px;
   transform: translateX(-50%);
 }
 .screen-header:not(.friend-header) {
