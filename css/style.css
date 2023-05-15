@@ -8,7 +8,7 @@
 @import "./components/badge.css";
 @import "./components/icon-row.css";
 @import "./components/alt-screen-header.css";
-@import "./components/screen-message.css";
+@import "./components/splash-screen.css";
 /* Screens */
 @import "./screens/background.css";
 @import "./screens/mediaquery.css";
@@ -25,6 +25,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   height: 100vh;
@@ -37,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Gamja Flower", cursive;
+  cursor: url("../images/cursor.png"), auto;
 }
 ::selection {
   background-color: var(--yellow-white);

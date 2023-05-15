@@ -11,6 +11,9 @@
   --light-brown-6: rgba(40, 22, 0, 0.6);
   --light-brown-7: rgba(40, 22, 0, 0.7);
 
+  --wrap-width: 41.4vh;
+  --wrap-height: 90vh;
+
   --main-border: 1px solid rgba(90, 87, 87, 0.1);
   --horizontal-space: 20px;
 }

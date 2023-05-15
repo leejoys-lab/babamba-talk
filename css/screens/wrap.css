@@ -1,14 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .wrap {
-  width: 41.4vh;
-  height: 85%;
+  width: var(--wrap-width);
+  height: var(--wrap-height);
+  padding: 100px 0;
 
-  border: 1px solid rgb(229, 229, 229);
-  border-top: none;
   overflow: auto;
-  position: relative;
-  left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
   background: var(--white);
   font-family: "Dongle", sans-serif;
 }
@@ -16,7 +16,6 @@
   overflow: hidden;
 }
 .login-wrap {
-  height: 85%;
   background-color: var(--yellow);
   overflow: hidden;
 }

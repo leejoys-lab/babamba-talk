@@ -1,0 +1,43 @@
+@keyframes hideSplashScreen {
+  0%,
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  width: var(--wrap-width);
+  height: var(--wrap-height);
+  background-color: var(--yellow);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: hideSplashScreen 1s ease-in-out forwards;
+}
+
+@keyframes babambaScreen {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-80%);
+  }
+  100% {
+    transform: translateY(0%);
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.friends-wrap #babamba {
+  width: var(--wrap-width);
+  transform: translateY(0%);
+
+  animation: babambaScreen 1.2s ease-in-out;
+}
